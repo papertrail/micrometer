@@ -52,7 +52,7 @@ public class AppOpticsDto {
 
     public List<AppOpticsDto> batch(int size) {
 
-        if(getMeasurements().size() <= size) {
+        if(this.measurements.size() <= size) {
             return Collections.singletonList(this);
         }
         final List<AppOpticsDto> batches = new ArrayList<>();
